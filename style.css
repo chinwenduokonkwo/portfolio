@@ -1,0 +1,126 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+font-family: Roboto,sans-serif;
+margin: 0;
+}
+a{
+text-decoration:none;
+color: rgb(129, 7, 129);
+font-family: arial,sans-serif;
+}
+
+a:hover{
+transform: translateX(-3px);
+
+}
+.header{
+display: grid;
+grid-template-columns:1fr 100px 100px ;
+margin-left: 55px;
+margin-right: 55px;
+margin-top: 25px;
+}
+
+.container{
+display: flex;
+
+}
+.container img{
+height: 550px;
+margin-left: 100px;
+}
+.container h1{
+font-size: 50px;
+width: 300px;
+font-family:'Gill Sans', 'Gill Sans MT', 
+Calibri, 'Trebuchet MS',sans-serif;
+position: relative;
+display: inline-block;
+}
+.container p{
+color:rgb(69, 67, 67) ;
+font-size:14px ;
+width: 470px;
+line-height: 18px;
+padding-top: 27px;
+
+}
+.container div h1::after
+{
+content: "";
+position: absolute;
+background-color: rgb(129, 7, 129); 
+height: 3px;
+width: 130px;
+top:100%;
+left: 15%;
+bottom:-8px ;
+
+}
+
+button{
+margin-top: 10px;
+padding:10px 8px ;
+background-color: rgb(129, 7, 129);
+color: white;
+border: none;
+border-radius: 6px;
+box-shadow: 0 0 5px  rgb(129, 7, 129);;
+
+}
+
+button:hover{
+cursor: pointer;
+transform: translateY(3px);
+
+}
+
+.description{
+margin-left: 115px;
+margin-top:100px ;
+
+}
+
+.main-footer{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+background-color: rgb(66, 64, 64);
+padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 50px;
+padding-right: 10px;
+}
+
+.main-footer h4{
+font-size: 18px;
+color:  rgb(129, 7, 129);;
+}
+.main-footer li{
+font-size: 15px;
+margin-top: 6px;
+list-style: none;
+}
+
+.main-footer hr{
+grid-column: 1/-1;
+width: 100%;
+margin-top: 20px;
+margin-right: 10px;
+opacity:.3 ;
+}
+.headphone{
+position: absolute;
+top: -5%;
+left: 15%;
+opacity: .05;
+z-index: 1;
+margin-top: 90px;
+height: 500px;
+margin-bottom: 250px;
+}
